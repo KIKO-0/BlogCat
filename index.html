@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Using CSS scroll animations to detect visibility changes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://codepen.io/giana/pen/XWGyRbL.css'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="warning">Your browser doesn't support scroll animations. This demo will not work.</div>
+  <header class="site-header">
+    <h1>Visibility <span>Demo</span></h1>
+
+    <label class="mobile-menu-button hamburger-icon">
+      <input type="radio" name="toggle-navigation" class="open-navigation navigation-closed" autocomplete="off">
+      <span class="visually-hidden">Open Navigation</span>
+    </label>
+
+    <nav class="site-navigation">
+      <div class="navigation-animation-wrapper">
+        <label class="mobile-menu-button close-icon">
+          <input type="radio" name="toggle-navigation" class="close-navigation navigation-opened" autocomplete="off">
+          <span class="visually-hidden">Close navigation</span>
+        </label>
+
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="https://github.com/KIKO-0" class="button">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="left-content">
+      <h2>欢迎 <span>参观</span> 这里！</h2>
+    </div>
+
+    <div class="right-content">
+      <p>熊二喜欢翠花、熊大喜欢熊二、光头强喜欢熊大、萝卜头喜欢光头强</p>
+
+      <p>Manage my light meals through “<a href="https://github.com/KIKO-0" target="_top">My
+          Github</a>” to get a better understanding of me.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Unstable. <a href="https://cdpn.io/pen/debug/gOEQmVW/#probably-bug" target="_top"> 赤井龙一 &copy; 2024 ʕ – ᴥ –
+        ʔ</a>.
+    </p>
+  </footer>
+  <!-- partial -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
